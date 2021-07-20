@@ -1,0 +1,25 @@
+anglisztika;XFI19-101;Filozófiatörténet;K;1|2;2;NULL
+anglisztika;DIG-001;Digitális bölcsész kompetenciák;G;1|2|3|4|5|6;2;NULL
+anglisztika;FLN11-101;A nyelvtudomány alapjai;K;1;3;NULL
+germanisztika;NEM17-424;A német irodalom mint a magyar irodalom közvetítője;G;4|5;5;NEM17-421*
+germanisztika;NEM17-431;Német-magyar kapcsolatok a XVI. századtól napjainkig;K;3;5;NEM17-001*
+germanisztika;NEM17-432;Német nyelvű dokumentáris források feldolgozása;G;4|5;5;NEM17-431*
+germanisztika;NEM17-433;Német-magyar kulturális interferenciák;G;4|5;5;NEM17-431*
+informatikus könyvtáros;IKT19-143;Könyv- és könyvtártörténet 1.;K;1;4;NULL
+informatikus könyvtáros;IKT19-144;Könyv- és könyvtártörténet 2.;K;2;4;IKT19-143
+japán;JAP-101;Mai japán nyelvképzés 1.;G;1;2;NULL
+japán;JAP-102;Mai japán nyelvképzés 2.;G;1;2;NULL
+japán;JAP-103;Mai japán nyelvképzés 3.;G;1;2;NULL
+japán;JAP-104;Mai japán nyelvképzés 4.;G;2;2;JAP-101|JAP-102|JAP-103
+japán;JAP-105;Mai japán nyelvképzés 5.;G;2;2;JAP-101|JAP-102|JAP-103
+japán;JAP-106;Mai japán nyelvképzés 6.;G;2;2;JAP-101|JAP-102|JAP-103
+japán;JAP-001;Alapvizsga japán nyelvből;V;2;0;JAP-104|JAP-105|JAP-106
+klasszika filológia;KLF11-209;Ógörög szövegolvasás 9.;G;3|4|5|6;4;KLF-001
+klasszika filológia;KLF-210;Ógörög szövegolvasás idegen nyelven;G;3|4|5|6;6;KLF-001
+magyar;MNY11-263;Magyar grammatika 1.;G;2|3;3;NULL
+magyar;MNY19-264;Magyar grammatika;K;3|4;4;MNY11-263|MNY19-265*
+magyar;MNY19-265;Magyar grammatika 2.;G;3|4;3;MNY11-263
+skandinavisztika;SKA11-301;Bevezetés a skandináv irodalomtudományba 1.;K;1;5;NULL
+skandinavisztika;SKA18-302;Bevezetés a skandináv irodalomtudományba 2.;K;2;5;SKA11-301
+történelem;TÖR11-301;Gazdaság- és társadalomtörténet;G;5|6;3;NULL
+történelem;TÖR11-311;Művelődéstörténet;G;5|6;3;NULL
