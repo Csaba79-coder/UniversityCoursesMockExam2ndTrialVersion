@@ -3,6 +3,7 @@ package module;
 import controller.CourseController;
 import model.Course;
 import model.CourseEnum;
+import util.FileHandler;
 
 import java.io.IOException;
 import java.util.List;
@@ -13,6 +14,7 @@ public class Processor {
     public static void run() {
 
         try {
+
             Map<CourseEnum, List<Course>> coursesMap = CourseController.runFirst();
 
             List<Course> weakPrerequisites = CourseController.runSecond(coursesMap);
