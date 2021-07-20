@@ -19,7 +19,7 @@ public class FileHandler {
     public static Map<CourseEnum, List<Course>> courseMap = new HashMap<>();
 
     public static void read() throws IOException {
-        FileReader fileReader = new FileReader(RELATIVE_PATH_TEST_FILE);
+        FileReader fileReader = new FileReader(RELATIVE_PATH);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         for (String line; (line = bufferedReader.readLine()) != null;) {
