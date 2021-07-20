@@ -2,10 +2,12 @@ package controller;
 
 import model.Course;
 import model.CourseEnum;
+import model.UnitType;
 import util.FileHandler;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -55,6 +57,34 @@ public class CourseController {
             }
         }
         return result;
+    }
+
+
+    public static Map<String, String> runFifth(Map<CourseEnum, List<Course>> courseMap){
+
+        Map<String, String> currentMap = new HashMap<>();
+        double counterK = 0;
+        double counterG = 0;
+
+        for(CourseEnum key : courseMap.keySet()){
+            for (int i = 0; i < courseMap.get(key).size(); i++) {
+                if (courseMap.get(key).get(i).getUnitType().equals(UnitType.K)) {
+                    counterK++;
+                }else if(courseMap.get(key).get(i).getUnitType().equals(UnitType.G)) {
+                    counterG++;
+                }
+            }
+            double sum = counterK + counterG;
+            counterK = (counterK / sum) * 100;
+            counterK = (int)counterK;
+            counterG = 100 - counterK;
+
+            currentMap.put(courseMap.get(key).get(0).getUnitName(), (int)counterK + "% - " + (int)counterG + "%");
+
+            counterK = 0;
+            counterG = 0;
+        }
+        return currentMap;
     }
 
 

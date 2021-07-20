@@ -23,6 +23,7 @@ public class Processor {
 
             Course mostPreconditions = CourseController.runFourth(coursesMap);
 
+            Map<String, String> averageMap = CourseController.runFifth(coursesMap);
 
             List<Course> nameIncludesNyelv = CourseController.runSixth(coursesMap);
 
