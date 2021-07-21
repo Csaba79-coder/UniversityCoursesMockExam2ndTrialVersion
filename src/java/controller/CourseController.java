@@ -16,6 +16,7 @@ public class CourseController {
     public static Map<CourseEnum, List<Course>> runFirst() throws IOException {
         FileHandler.read();
         Map<CourseEnum, List<Course>> firstResult = FileHandler.courseMap;
+        System.out.println(firstResult.size());
         System.out.println();
         return firstResult;
     }
