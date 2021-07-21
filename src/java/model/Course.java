@@ -34,7 +34,7 @@ public class Course {
 
     public Course(String course, String unitCode, String unitName, UnitType unitType, List<Integer> recommendedSemester,
                   int credit, List<String> precondition) {
-        this.course = CourseEnum.getEnumByLabel(course);
+        this.course = CourseEnum.getEnumByHunName(course);
         this.unitCode = unitCode;
         this.unitName = unitName;
         this.unitType = unitType;
