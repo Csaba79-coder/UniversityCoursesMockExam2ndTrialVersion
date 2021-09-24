@@ -32,8 +32,7 @@ public class Course {
         );
     }
 
-    public Course(String course, String unitCode, String unitName, UnitType unitType, List<Integer> recommendedSemester,
-                  int credit, List<String> precondition) {
+    public Course(String course, String unitCode, String unitName, UnitType unitType, List<Integer> recommendedSemester, int credit, List<String> precondition) {
         this.course = CourseEnum.getEnumByHunName(course);
         this.unitCode = unitCode;
         this.unitName = unitName;
@@ -42,6 +41,17 @@ public class Course {
         this.credit = credit;
         this.precondition = precondition;
     }
+
+    /* public Course(String course, String unitCode, String unitName, UnitType unitType, List<Integer> recommendedSemester,
+                  int credit, List<String> precondition) {
+        this.course = CourseEnum.getEnumByHunName(course);
+        this.unitCode = unitCode;
+        this.unitName = unitName;
+        this.unitType = unitType;
+        this.recommendedSemester = recommendedSemester;
+        this.credit = credit;
+        this.precondition = precondition;
+    }*/
 
     public CourseEnum getCourse() {
         return course;
